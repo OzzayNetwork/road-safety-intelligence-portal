@@ -240,28 +240,56 @@
             </div>
         </header>
 
-        <!-- ========== Left Sidebar Start ========== -->
-       <div class="vertical-menu">
-
+         <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
             <div data-simplebar class="h-100">
-
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
-                        <li class="menu-title" key="t-pages">NTSA  Road Safety Intelligence Portal</li>
-
-                        <li class="side-bar-button" >
+                        <li class="menu-title d-none" key="t-pages">Road Safety Intelligence Portal</li>
+                        <li class="side-bar-button d-none" >
                             <a href="bill-new.html" class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
                                 <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
                                 <span class="text-capitalize">Create A Bill</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
+                        </li>
+
+                        <li>
+                            <a href="saccos.html" class="waves-effect">
+                                <i class="mdi mdi-car-multiple"></i><span>Registered Saccos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="map.html" class="waves-effect">
+                                <i class="mdi mdi-map-marker-outline"></i><span>Live Map</span>
+                            </a>
+                        </li>
+                        <li class="menu-title" key="t-pages">Reports</li>
+                        
+                        <li>
+                            <a href="violation-reports.html" class="waves-effect">
+                                <i class="mdi mdi-file-cancel-outline"></i><span>Violation Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-receipt"></i>
+                                <span>Bills</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="bills-raised.html">Bills raised</a></li>
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>      
+                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>                               
+
+                            </ul>
                         </li>
                        
                         <li>
@@ -286,31 +314,6 @@
                             </a>
                         </li>
 
-                        <li class="">
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-receipt"></i>
-                                <span>Bills</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="bills-raised.html">Bills raised</a></li>
-                                <li><a href="bills-receipted.html">Receipted Bills</a></li>      
-                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>                               
-
-                            </ul>
-                        </li>
-
-                        <li class="">
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi-certificate mdi"></i>
-                                <span>Certificates & Licenses</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="cert-biz.html">Business Permits</a></li>
-                                <li><a href="cert-food.html">Food handlers certificate</a></li>      
-                                <li><a href="food-hygine.html">Food Hygiene Certificate</a></li>                              
-
-                            </ul>
-                        </li>
                         
 
                         <li>
@@ -357,7 +360,6 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
-
 
 
         <!-- ============================================================== -->
