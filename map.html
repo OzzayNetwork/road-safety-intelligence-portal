@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Maji H2O | All Trip requests</title>
+    <title>NTSA | Live Map View</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -942,18 +942,16 @@
                 <div class="offcanvas-header">
                     <div class="d-flex">
 
-                        <div class="flex-shrink-0 align-self-center me-3">
+                        <div class="flex-shrink-0 align-self-center me-3 d-none">
                             <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                         </div>
 
                         <div class="flex-grow-1 overflow-hidden pe-5">
                             <div class=" mb-1 text-capitalize d-flex">
                                 <h5 class="text-truncate font-size-14 mb-0">
-                                    Kelvin Kinoti
+                                    14 Seater (Mololine Sacco)
                                 </h5>
-                                <div class="rating-star font-size-11">
-                                    <input type="hidden" class="rating font-size-11" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                                </div>
+                                
                             </div>
                             <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
                         </div>
@@ -963,7 +961,7 @@
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="alert alert-warning" role="alert">
+                    <div class="alert alert-warning text-uppercase" role="alert">
                         Driver On Transit
                     </div>
                     <div class="card shadow-none border">
@@ -972,27 +970,11 @@
 
                                 <div class="d-flex">
                                     <div class="overflow-hidden me-auto">
-                                        <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Journey Details</a></h5>
-                                        <p class="text-muted text-truncate mb-0">23 KM</p>
+                                        <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Live Details</a></h5>
+                                        <p class="text-muted text-truncate mb-0 d-none">23 KM</p>
                                     </div>
                                     <div class="align-self-end ms-2">
-                                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 20 Min</p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <div class="border-bottom">
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0 align-self-center me-3">
-                                                <img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle" alt="">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="font-size-15 mb-1">Henry Wells (Pass)</h5>
-                                                <div class="rating-star font-size-11">
-                                                    <input type="hidden" class="rating font-size-11" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="text-muted mb-0 text-uppercase"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Update 20 Min</p>
                                     </div>
                                 </div>
 
@@ -1009,7 +991,37 @@
                                         </p>
                                     </div>
                                 </div>
-                                <ul class="verti-timeline list-unstyled ">
+
+                                <div class="card-body bg-light d-flex mb-4 mt-4">
+                                    <p class=" mb-0 ">
+                                        <i class="mdi mdi-map-marker-distance text-primary align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                    </p>
+                                    <div>
+                                        <p class="text-muted mb-0 ">Distance Covered Today</p>
+                                        <p class="mb-0 ">
+                                            <strong class="fw-semibold text-capitalize">
+                                                <span class="">22 Km at an AVG speed of 78KPH</span>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body bg-info bg-light d-flex mb-4 mt-4">
+                                    <p class=" mb-0 ">
+                                        <i class="mdi mdi-speedometer text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                    </p>
+                                    <div>
+                                        <p class="text-muted mb-0 ">Driving Speed</p>
+                                        <p class="mb-0 ">
+                                            <strong class="fw-semibold">
+                                                <span class="">65 KPH</span>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                               
+                                <ul class="verti-timeline list-unstyled d-none">
                                     <li class="event-list ">
                                         <div class="event-timeline-dot ">
                                             <i class="mdi mdi-bell-ring font-size-18 text-warning "></i>
@@ -1059,28 +1071,30 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="card-body bg-info bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-water text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Water Quantity</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">5,000 Li</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
+                                
                                 <div class="card-body bg-light d-flex mb-4 mt-4">
                                     <p class=" mb-0 ">
                                         <i class="mdi mdi-cash-multiple text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
                                     </p>
                                     <div>
-                                        <p class="text-muted mb-0 ">Total Charges</p>
+                                        <p class="text-muted mb-0 ">Outstanding Fines and Charges</p>
                                         <p class="mb-0 ">
                                             <strong class="fw-semibold">
                                                 <span class="">KES 1,200</span>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body alert alert-danger d-flex mb-4 mt-4">
+                                    <p class=" mb-0 ">
+                                        <i class="mdi mdi-alert text-danger align-middle me-3 font-size-24 ml-5 mr-5 "></i>
+                                    </p>
+                                    <div>
+                                        <p class="text-muted mb-0 ">Unpaid Violation</p>
+                                        <p class="mb-0 ">
+                                            <strong class="fw-semibold">
+                                                <span class="">Exceeding speed limit prescribed for class of vehicle by 1-5 KPH</span>
                                             </strong>
                                         </p>
                                     </div>

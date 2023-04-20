@@ -5241,7 +5241,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .verti-timeline {
-    border-left: 3px dashed #f6f6f6;
+    /* border-left: 3px dashed #f6f6f6; */
     margin: 0 10px
 }
 
@@ -5260,7 +5260,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 
 .verti-timeline .event-list .event-content {
     position: relative;
-    border: 2px solid #eff2f7;
+    /* border: 2px solid #eff2f7; */
     border-radius: 7px
 }
 

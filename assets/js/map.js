@@ -349,13 +349,13 @@ function initMap() {
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="d-none flex-shrink-0 align-self-center me-3">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
                <div class="flex-grow-1 overflow-hidden pe-5">
                    <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
+                   14 Seater (Mololine Sacco)
                     <div class="rating-star">
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
@@ -364,46 +364,53 @@ function initMap() {
                </div>
 
                <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+                    <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
+                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
                </div>
                </div>
         </div>
 
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
+        <div class="card-body bg-light p-1 mt-2>
+                           
+            <p class="text-muted mb-0 d-flex flex-row">
+                <i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i>
+                <div>
+                    <p class="text-muted mb-0">Last recorded location</p>
+                    <span class="the-clicked-address">Unknown Location</span> 
+                </div>
+            </p>
         </div>
 
         <div class="card-body">
             <ul class="verti-timeline list-unstyled">        
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
+                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                     </div>
                     <div class="d-flex">
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Base Location
+                         Last Updated
                         </span>
                             <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
+                                10:09 PM
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                     </div>
                     <div class="d-flex">
                        
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Destination
+                        Time and Speed since inactivation
                         </span>
                             <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
+                                23 Hours At a speed of 67 KPH
                             </div>
                         </div>
                     </div>
@@ -425,13 +432,13 @@ function initMap() {
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="d-none flex-shrink-0 align-self-center me-3">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
                <div class="flex-grow-1 overflow-hidden pe-5">
                    <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
+                   14 Seater (Super Metro Sacco)
                     <div class="rating-star">
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
@@ -440,8 +447,8 @@ function initMap() {
                </div>
 
                <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
+               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
                </div>
                </div>
         </div>
@@ -454,32 +461,32 @@ function initMap() {
             <ul class="verti-timeline list-unstyled">        
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
+                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                     </div>
                     <div class="d-flex">
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Base Location
+                         Last Updated
                         </span>
                             <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
+                          10 Jan 2023 At 10:54 AM
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                     </div>
                     <div class="d-flex">
                        
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Destination
+                         Time and Speed since inactivation
                         </span>
                             <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
+                           45 Min at a speed of 102 KPH
                             </div>
                         </div>
                     </div>
@@ -500,13 +507,13 @@ function initMap() {
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="d-none flex-shrink-0 align-self-center me-3">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
                <div class="flex-grow-1 overflow-hidden pe-5">
                    <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
+                   Mini Bus (2NK Sacco)
                     <div class="rating-star">
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
@@ -515,8 +522,8 @@ function initMap() {
                </div>
 
                <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
+               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
                </div>
                </div>
         </div>
@@ -529,32 +536,32 @@ function initMap() {
             <ul class="verti-timeline list-unstyled">        
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
+                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                     </div>
                     <div class="d-flex">
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Base Location
+                         Last Updated
                         </span>
                             <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
+                          10 Jan 2023 At 10:54 AM
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                     </div>
                     <div class="d-flex">
                        
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Destination
+                         Time and Speed since inactivation
                         </span>
                             <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
+                           45 Min at a speed of 102 KPH
                             </div>
                         </div>
                     </div>
@@ -582,7 +589,7 @@ function initMap() {
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Steven Franklin
+                       14 Seater (Mololine Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -605,7 +612,7 @@ function initMap() {
                 <ul class="verti-timeline list-unstyled">        
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
+                            <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                         </div>
                         <div class="d-flex">
                             
@@ -621,7 +628,7 @@ function initMap() {
                     </li>
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                            <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                         </div>
                         <div class="d-flex">
                            
@@ -651,13 +658,13 @@ function initMap() {
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="d-none flex-shrink-0 align-self-center me-3">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
                <div class="flex-grow-1 overflow-hidden pe-5">
                    <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
+                   14 Seater (Mololine Sacco)
                     <div class="rating-star">
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
@@ -666,8 +673,8 @@ function initMap() {
                </div>
 
                <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
+               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
                </div>
                </div>
         </div>
@@ -680,32 +687,32 @@ function initMap() {
             <ul class="verti-timeline list-unstyled">        
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
+                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                     </div>
                     <div class="d-flex">
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Base Location
+                         Last Updated
                         </span>
                             <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
+                          10 Jan 2023 At 10:54 AM
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="event-list">
                     <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                     </div>
                     <div class="d-flex">
                        
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Destination
+                         Time and Speed since inactivation
                         </span>
                             <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
+                           45 Min at a speed of 102 KPH
                             </div>
                         </div>
                     </div>
@@ -721,7 +728,7 @@ function initMap() {
     // addMarker({
     //     coords: { lat: -1.29889, lng: 36.8386003 },
     //     iconImage: inactiveAgent,
-    //     content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+    //     content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
     // });
 
     //active agent
@@ -733,7 +740,7 @@ function initMap() {
     //         <span class="offline-agent mr-2"></span> 
     //         <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
     //         </h6>
-    //          <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+    //          <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
     //          <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
     //          <div class="listview text-align-left text-capitalize pl-0">  
     //          <div class="listview__header text-align-left text-capitalize text-left">
@@ -755,13 +762,13 @@ function initMap() {
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Alex Wanjala
+                       14 Seater (Super Metro Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -770,8 +777,8 @@ function initMap() {
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-danger align-middle me-1"></i> Car broke down</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                        <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-danger align-middle me-1"></i> In Violation</p>
+                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>
             </div>
@@ -781,12 +788,37 @@ function initMap() {
                     <i class="mdi mdi-map-marker text-danger align-middle me-1 font-18px"></i>             
                 </p>
             <div>
-            <p class="text-muted mb-0">Reported at</p>                         
+            <p class="text-muted mb-0">Current Location</p>                         
             <p class="mb-0">                        
                 <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
             </p>
+
+               
            </div>
             </div>
+
+            <div class="mt-3  alert alert-danger">
+                <p class="m-0 p-0">
+                    <h6 class="text-black">Violation Commited</h6>
+                    <p class="m-0 p-0 text-black">Exceeding speed limit prescribed for class of vehicle by 1-5 KPH</p>
+                </p>
+            </div>
+
+            <div class="alert alert-primary">
+                <p class="m-0 p-0">
+                    <h6>Driving Speed</h6>
+                    <h4 class="m-0 p-0 text-black fw-medium">50 KM/H</h4>
+                </p>
+            </div>
+
+            <div class="alert alert-warning">
+            <p class="m-0 p-0">
+                <h6>Time Elapsed since violation</h6>
+                <h4 class="m-0 p-0 text-black fw-medium">30 minutes</h4>
+            </p>
+        </div>
+
+            
 
            
         </div>
@@ -803,13 +835,13 @@ function initMap() {
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Alex Wanjala
+                       14 Seater (3NK Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -819,7 +851,7 @@ function initMap() {
 
                    <div class="font-size-11 text-right">
                         <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>
             </div>
@@ -863,13 +895,13 @@ function initMap() {
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Alex Wanjala
+                       Mini Bus (Embassava Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -879,7 +911,7 @@ function initMap() {
 
                    <div class="font-size-11 text-right">
                         <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>
             </div>
@@ -917,7 +949,7 @@ function initMap() {
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Steven Franklin
+                       14 Seater (Super Metro Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -940,7 +972,7 @@ function initMap() {
                 <ul class="verti-timeline list-unstyled">        
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
+                            <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                         </div>
                         <div class="d-flex">
                             
@@ -956,7 +988,7 @@ function initMap() {
                     </li>
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                            <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                         </div>
                         <div class="d-flex">
                            
@@ -994,7 +1026,7 @@ function initMap() {
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Steven Franklin
+                       14 Seater (Mololine Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -1017,7 +1049,7 @@ function initMap() {
                 <ul class="verti-timeline list-unstyled">        
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
+                            <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
                         </div>
                         <div class="d-flex">
                             
@@ -1033,7 +1065,7 @@ function initMap() {
                     </li>
                     <li class="event-list">
                         <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                            <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
                         </div>
                         <div class="d-flex">
                            
@@ -1071,13 +1103,13 @@ function initMap() {
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Steven Franklin
+                       Minibus (Super Metro Sacco)
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
@@ -1086,8 +1118,8 @@ function initMap() {
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-muted align-middle me-1"></i> Driver is offline</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                        <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-muted align-middle me-1"></i> Inactivated</p>
+                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>
             </div>
