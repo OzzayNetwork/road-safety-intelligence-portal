@@ -1262,13 +1262,15 @@ padding: 0px;
         text-align: right;
     }
 
-    
+    .high-chart-cont{
+        padding-top: 2rem;
+    }
 
-    .quick-stats-cont .quick-stat>div .text-muted{
+    .quick-stats-cont .quick-stat>div .text-muted,.live-data-card .text-muted{
         color: #ffffffdb !important;
         font-size: 12px;
     }
-    .quick-stats-cont .quick-stat>div h5{
+    .quick-stats-cont .quick-stat>div h5,.live-data-card h5{
         color: white;
     }
 
@@ -1286,4 +1288,31 @@ padding: 0px;
         background-size: contain;
         /* background-size: cover; */
         opacity: 0.1;
+    }
+    .index-live-stats{
+        background: #11998e;
+        background: linear-gradient(132deg, rgb(2 91 36) 0%, rgb(128, 208, 199) 100%);
+    }
+    .live-data-card{
+        background-color: #ffffff12;
+        padding: 1rem;
+        display: flex;
+        color: white;
+    }
+    .live-data-card img{
+        height: 45px;
+    }
+    .index-live-stats::before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url("../images/tower-bund-walkway-avenue-skyline-main.jpg");
+        /* background-attachment: fixed; */
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        opacity: 15%;
     }

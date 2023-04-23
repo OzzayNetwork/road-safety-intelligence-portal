@@ -1,53 +1,55 @@
 Highcharts.chart('annual-sales', {
     chart: {
-        type: 'column',
-        style: {
+        zoomType: 'xy',
+         style: {
             fontFamily: '"Poppins",sans-serif'
         }
     },
     title: {
-        text: "Revenue Collection",
-        style: {
-            fontSize: '14px' 
-         }
+        text: '',
+        align: 'Center'
     },
-    subtitle: {
-        text: null
-    },
-    xAxis: {
-        categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ],
+    
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         crosshair: true
-    },
-    yAxis: {
-        min: 0,
+    }],
+    yAxis: [ { // Secondary yAxis
         title: {
-            text: 'Amount (KES)',
-            text:null
+            text: 'Violations Count',
+            style: {
+                color: "black"
+            }
         },
+        labels: {
+            
+            style: {
+                color: "black"
+            }
+        },
+        opposite: true,
         gridLineColor: '#c2c2c2',
-        gridLineWidth: 0.2
-    },
+        gridLineWidth: 0,
+        min: 0,
+    },{ // Primary yAxis
+        labels: {
+            
+            style: {
+                color: '#007647'
+            }
+        },
+        title: {
+            text: 'Revenue (KES)',
+            style: {
+                color: "#007647"
+            }
+        }
+    }],
     tooltip: {
-        headerFormat: '<span style="font-size:14px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="black;padding:0;padding-right:5px">{series.name}:  </td> ' +
-            '<td style="padding:0"><b class="fw-semibold"> KES {point.y:.,2f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
+        shared: true
     },
+    
     plotOptions: {
         column: {
             pointPadding: 0.2,
@@ -55,22 +57,24 @@ Highcharts.chart('annual-sales', {
         }
     },
     series: [{
-        name: 'Target',
-        color:'black',
-        data: [43499, 145615, 156064, 125692, 134440, 291760, 178356, 148985, 216784,
-            197841, 95676, 54544]
-
-    },  {
-        color:'#aae5d3',
-        name: 'Last Year',
-        data: [484559, 385668, 397873, 123414, 456770, 487893, 123590, 124596, 534524, 612352, 523493,
-            123512]
+        name: 'Revenue',
+        type: 'column',
+        color:'#00c399',
+        yAxis: 1,
+        data: [27452000, 62882000, 72172000, 33412000, 82902000, 102842000, 14562000, 25172000, 33902000,
+            56002000, 12862000, 13212000],
+        tooltip: {
+            valueSuffix: ''
+        }
 
     }, {
-        name: 'This Year',
-        color:'#00c399',
-        data: [124284, 312332, 343455, 345697, 534526, 745655, 571234, 604564, 471236, 312391, 434568,
-            556711]
-
+        name: 'Violations',
+        type: 'spline',
+        color:'black',
+        data: [13, 14, 5, 7, 3, 13, 14, 10, 5,
+            27, 11, 16],
+        tooltip: {
+            valueSuffix: ''
+        }
     }]
 });
