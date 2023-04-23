@@ -1263,7 +1263,8 @@ padding: 0px;
     }
 
     .high-chart-cont{
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
+        height: 350px;
     }
 
     .quick-stats-cont .quick-stat>div .text-muted,.live-data-card .text-muted{
