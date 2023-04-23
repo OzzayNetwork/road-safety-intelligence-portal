@@ -1317,3 +1317,11 @@ padding: 0px;
         background-repeat: no-repeat;
         opacity: 15%;
     }
+
+    #county-rev{
+        height: 800px;
+    }
+
+    .calc-23{
+        height: calc(100% - 23px);
+    }
