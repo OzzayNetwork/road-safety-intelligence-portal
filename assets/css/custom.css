@@ -1325,3 +1325,6 @@ padding: 0px;
     .calc-23{
         height: calc(100% - 23px);
     }
+    .h-80{
+        height: 80% !important;
+    }

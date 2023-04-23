@@ -649,34 +649,35 @@ function initMap() {
         `
     });
 
-    //inactive agent
-    // addMarker({
-    //     coords: { lat: -1.29889, lng: 36.8386003 },
-    //     iconImage: inactiveAgent,
-    //     content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
-    // });
+    // inactive agent
+    addMarker({
+        coords: { lat: -1.3220747760956988, lng: 36.84309952630073 },
+        iconImage: inactiveAgent,
+        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+    });
 
-    //active agent
-    // addMarker({
-    //     coords: { lat: -1.3289, lng: 36.8452003 },
-    //     iconImage: activeAgent,
-    //     content: `<p class="d-none">agent|plate num</p>
-    //         <h6 class="text-capitalize d-flex align-items-center">
-    //         <span class="offline-agent mr-2"></span> 
-    //         <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
-    //         </h6>
-    //          <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-    //          <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
-    //          <div class="listview text-align-left text-capitalize pl-0">  
-    //          <div class="listview__header text-align-left text-capitalize text-left">
-    //          <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
-    //          </div> 
-    //          <div class="progress"> 
-    //          <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    //          </div>
-    //          </div>
-    //          </p> `
-    // });
+    // active agent
+    addMarker({
+         
+        coords: { lat: -1.3190288563961594, lng: 36.837738602409445 },
+        iconImage: activeAgent,
+        content: `<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize d-flex align-items-center">
+            <span class="offline-agent mr-2"></span> 
+            <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
+            </h6>
+             <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
+    });
 
     //Taxi incident
     addMarker({
