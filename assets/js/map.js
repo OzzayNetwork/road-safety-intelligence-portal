@@ -776,7 +776,7 @@ function initMap() {
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Compliant</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>
@@ -802,15 +802,15 @@ function initMap() {
 
     //incidents
 
-    // addMarker({
-    //     coords: { lat: -1.29948, lng: 36.8751453 },
-    //     iconImage: warning,
-    //     content: `<p class="d-none">incident|identifiret</p>
-    //         <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
-    //         <h6> Violent Nairobian</h6> 
-    //         <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
-    //         <strong class="text-info">20 Min Ago</strong>`
-    // });
+    addMarker({
+        coords: { lat: -1.29948, lng: 36.8751453 },
+        iconImage: warning,
+        content: `<p class="d-none">incident|identifiret</p>
+            <img class="mb-3" src="assets/images/incident.jpg" alt=""> 
+            <h6> Head On coalition</h6> 
+            <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
+            <strong class="text-info">20 Min Ago</strong>`
+    });
 
     //available Taxis
     addMarker({
@@ -836,7 +836,7 @@ function initMap() {
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i>Compliant</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
                    </div>
                    </div>

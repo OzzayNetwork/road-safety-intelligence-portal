@@ -27,8 +27,8 @@
 
 .map-card {
     position: absolute;
-    bottom: 30px;
-    left: 10px;
+    bottom: 55px;
+    left: 35px;
     z-index: 1;
     margin-bottom: 0px;
     z-index: 2;
@@ -48,8 +48,8 @@
 .map-key-card {
     position: absolute;
     z-index: 1;
-    bottom: 0px;
-    left: 10px;
+    bottom:35px;
+    left: 35px;
     cursor: pointer;
     cursor: pointer;
 }
@@ -99,9 +99,9 @@
 }
 
 
-/* .gm-style .gm-style-iw-d img {
+.gm-style .gm-style-iw-d img {
     width: 240px;
-} */
+}
 
 .live-map-cont .verti-timeline {
     /* border-left: 3px dashed #b0b2bed4; */

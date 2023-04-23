@@ -1328,3 +1328,21 @@ padding: 0px;
     .h-80{
         height: 80% !important;
     }
+
+    .listview__img {
+        height: 3rem;
+        border-radius: 50%;
+        vertical-align: top;
+        margin: 0 1.2rem 0 0;
+    }
+    .listview:not(.listview--block) .listview__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .listview__content {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        min-width: 0;
+    }
