@@ -1,3 +1,5 @@
+var theCanvas = new bootstrap.Offcanvas(offcanvasExample)
+
 $('.main-map-container .ma-backdrop').on('click', function() {
     $('.main-map-container aside').addClass('left-100');
     $(this).addClass('d-none');
@@ -653,7 +655,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.3220747760956988, lng: 36.84309952630073 },
         iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong class="text-black fw-medium">Created a bill for KAT 567Y at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
     });
 
     // active agent
@@ -667,7 +669,7 @@ function initMap() {
             <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
             </h6>
              <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <p>Most recent activity: <strong class="text-black fw-medium">Reported an Incident at 12:09 PM 23 May 2023</strong>
              <div class="listview text-align-left text-capitalize pl-0">  
              <div class="listview__header text-align-left text-capitalize text-left">
              <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
@@ -972,7 +974,7 @@ function initMap() {
 
             marker.addListener('click', function(e) {
                 toggleBounce(marker);
-
+                theCanvas = new bootstrap.Offcanvas(offcanvasExample)
                 var newCoords = e.latLng;
                 newCoords = newCoords.toString();
                 // alert(newCoords);
@@ -985,6 +987,7 @@ function initMap() {
                 longitude = longitude.substring(0, longitude.indexOf(')'));
 
                 reverseGeocoding(Latitude, longitude);
+                
 
 
 
@@ -1052,6 +1055,7 @@ function initMap() {
                 if (theGroup == "plate-available") {
 
                     $('#plate .plate-application-plate').removeClass('d-none').prev().addClass('d-none');
+                    alert("the application")
 
                     $('#plate').removeClass('left-100').siblings().addClass('left-100');
                     $('.main-map-container .ma-backdrop').removeClass('d-none');
@@ -1092,7 +1096,7 @@ function initMap() {
                     $('#incident-info').removeClass('left-100').siblings().addClass('left-100');
                     $('.main-map-container .ma-backdrop').removeClass('d-none');
                     $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
-
+                    theCanvas = new bootstrap.Offcanvas(incidentcanvas)
                 }
 
                 if (theGroup == "collectionPoint") {
@@ -1100,6 +1104,7 @@ function initMap() {
                     $('#collectionPoint-info').removeClass('left-100').siblings().addClass('left-100');
                     $('.main-map-container .ma-backdrop').removeClass('d-none');
                     $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                    
                 }
 
                 if (theGroup == "agent") {
@@ -1107,6 +1112,8 @@ function initMap() {
                     $('#agents-info').removeClass('left-100').siblings().addClass('left-100');
                     $('.main-map-container .ma-backdrop').removeClass('d-none');
                     $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                    theCanvas = new bootstrap.Offcanvas(agentscanvas)
+                    //alert("sdjbfhjsdbf")
                 }
 
                 if (theGroup == "offstreetParking") {
@@ -1125,9 +1132,9 @@ function initMap() {
                 }
 
                 // this shows the more details
-                // alert('clicked');
+             //alert(theGroup)
 
-                var theCanvas = new bootstrap.Offcanvas(offcanvasExample)
+                
                 theCanvas.show()
 
 
