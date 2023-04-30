@@ -901,7 +901,16 @@
                             <div class="card calc-23">
                                 <div class="card-body">
                                     <div class="clearfix">
-                                        <div class="float-end">
+                                        <div class="float-end d-flex ">
+                                            <div class="input-group input-group-sm mx-3">
+                                                <select class="form-select form-select-sm">
+                                                    <option value="JA" selected>Violations</option>
+                                                    <option value="DE">Collected Revenue</option>
+                                                   
+                                                </select>
+                                                <label class="input-group-text">Filter By</label>
+                                            </div>
+
                                             <div class="input-group input-group-sm">
                                                 <select class="form-select form-select-sm">
                                                     <option value="JA" selected>Jan</option>
@@ -911,12 +920,14 @@
                                                 </select>
                                                 <label class="input-group-text">Month</label>
                                             </div>
+
+                                            
                                         </div>
                                         <h4 class="card-title mb-4 text-capitalize">Revenue collection by county</h4>
                                     </div>
                                     
 
-                                    <div id="county-rev" class="h-80" dir="ltr"></div>
+                                    <div id="Map-data" class="h-80" dir="ltr"></div>
                                 </div>
                             </div>
                             <!--end card-->
@@ -1631,16 +1642,22 @@
   <!-- Saas dashboard init -->
   <script src="assets/js/pages/earlyBirdDashboard.js "></script>
 
-  <!-- highchart js files -->
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/heatmap.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/modules/export-data.js"></script>
-  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+ <!-- highchart map modules -->
+ <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+ <script src="https://code.highcharts.com/highcharts-more.js"></script>
+ <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+ <!-- highchart js files -->
+ <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+ <script src="https://code.highcharts.com/modules/export-data.js"></script>
+ <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
   <script src="assets/js/pages/revenue-by-time.js "></script>
   <script src="assets/js/pages/annial-perfomance.js"></script>
   <script src="assets/js/pages/county-revenue.js"></script>
+
+  <script src="assets/js/dataMap.js "></script>
 
 
 
