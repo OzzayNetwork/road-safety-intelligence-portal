@@ -1,6 +1,8 @@
 
+
+
 //changing map type
-var chartDate="All Time", chartProd="Ethernal",chartmvt_type="Sales Perfomance(%)"
+var chartDate="All Time", chartProd="Ethernal",chartmvt_type="Sales Perfomance(%)",min=1, max=100,filter_by="Violations"
 function changingLegendTitle(){
     Mapchart.legend.title.attr({
         text:chartDate+" "+chartProd+" "+chartmvt_type
@@ -8,6 +10,52 @@ function changingLegendTitle(){
 
     Mapchart.series[0].update({
         name:chartDate+" "+chartProd+" "+chartmvt_type
+    })
+}
+
+//filter by month
+$('.filter-by-month').on('change', function(){
+    changingSeriesData()
+})
+
+//changing to filtered by
+$('.filter-by').on('change', function(){
+    var val=$(this).val()
+    if(val=="Violations"){
+        max=100
+        min=1
+        changingSeriesData()
+        redColorScheme()
+        unitsTooltips()
+    }
+
+    if(val=="Revenue"){
+        max=10000000
+        min=1
+        changingSeriesData()
+        changingLegendColor()
+        cashTooltips()
+    }
+
+})
+
+//Cash legend
+function unitsTooltips(){
+    Mapchart.series[0].update({
+        tooltip: {
+            pointFormat: '<span style="font-weight:500;">{point.name} County: </span>{point.value}',
+            shared: true
+        },
+    })
+}
+
+//cash legend
+function cashTooltips(){
+    Mapchart.series[0].update({
+        tooltip: {
+            pointFormat: '<span style="font-weight:500;">{point.name} County: </span>KES {point.value}',
+            shared: true
+        },
     })
 }
 
@@ -23,21 +71,29 @@ function changingLegendColor(){
         min: 1,
         stops: [
             [0, '#ebedf0'],
-            [0, '#df0012'],
-            [0.3, '#f7b900'],
-            [0.95, '#3ea05e']
-        ]
+            [0.2, '#c6e6d0'],
+            [0.4, '#7dc794'],
+            [0.6, '#46af68'],
+            [0.7, '#358e52'],
+            [1, '#215d34']
+        ],
     })
 }
 
-function unitsTooltips(){
-    Mapchart.series[0].update({
-        tooltip: {
-            pointFormat: '<span style="font-weight:500;">{point.name} County: </span> {point.value} Units',
-            shared: true
-        },
+function redColorScheme(){
+    Mapchart.colorAxis[0].update({
+        min: 1,
+        stops: [
+            [0, '#ebedf0'],
+            [0.2, '#ffcacd'],
+            [0.4, '#f16964'],
+            [0.6, '#ff2a15'],
+            [0.7, '#df0013'],
+            [1, '#c50000']
+        ] 
     })
 }
+
 
 function percentageTooltip(){
     Mapchart.series[0].update({
@@ -68,37 +124,9 @@ function normalTooltip(){
 
 function changingSeriesData(){
 
-    min=1
-    max=100000
-
-    normalTooltip()
-    // unitsTooltips()
-
-    Mapchart.colorAxis[0].update({
-        min: 1,
-        stops: [
-            [0, '#ebedf0'],
-            [0.2, '#c6e6d0'],
-            [0.4, '#7dc794'],
-            [0.6, '#46af68'],
-            [0.7, '#358e52'],
-            [1, '#215d34']
-        ],
-    })
-
-    if(chartProd==="Ethanol"){
-        litersTooltip()
-        //alert("the tool")
-        max=1000000
+    if(filter_by=="Revenue"){
+       
     }
-
-    if(chartmvt_type==="Sales Perfomance(%)"){
-        max=100
-        min=1
-       changingLegendColor()
-        percentageTooltip()
-    }
-
 
     Mapchart.series[0].update({
         "data": [
@@ -349,7 +377,6 @@ function changingSeriesData(){
             }
         ]
     })
-
    
 }
 
