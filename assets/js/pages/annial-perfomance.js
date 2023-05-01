@@ -19,13 +19,13 @@ Highcharts.chart('annual-sales', {
         title: {
             text: 'Violations Count',
             style: {
-                color: "black"
+                color: "#c50000"
             }
         },
         labels: {
             
             style: {
-                color: "black"
+                color: "#c50000"
             }
         },
         opposite: true,
@@ -70,7 +70,7 @@ Highcharts.chart('annual-sales', {
     }, {
         name: 'Violations',
         type: 'spline',
-        color:'black',
+        color:'#c50000',
         data: [13, 14, 5, 7, 3, 13, 14, 10, 5,
             27, 11, 16],
         tooltip: {

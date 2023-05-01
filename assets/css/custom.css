@@ -1346,3 +1346,6 @@ padding: 0px;
         flex: 1;
         min-width: 0;
     }
+    .highcharts-credits{
+        display: none;
+    }
