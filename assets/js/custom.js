@@ -741,6 +741,21 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
 
+
+    $('.select-cards-month').on('change', function(){
+        var min,max;
+        $('.per-rand-num').each(function(index) {
+            max=100
+            min=0
+           $(this).text(randomNum(min,max))
+        //    alert("changing")
+        });
+    })
+    
+    function randomNum(min,max){
+        return Math.floor(Math.random()*(max-min+1))+min
+    }
+
     $('.dismin-modal').on('click', function(){
         $('#payment-modal').modal('hide')
     })
