@@ -380,12 +380,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Driving schools</h4>
+                                <h4 class="mb-sm-0 font-size-18">Violations report</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Driving Schools</li>
+                                        <li class="breadcrumb-item active">Violations Report</li>
                                     </ol>
                                 </div>
 
@@ -399,12 +399,59 @@
                                 <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            All Driving Schools
-                                        </h4>
                                         <div class="d-flex">
-                                            <a href="bill-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize d-none">
-                                                <i class="mdi mdi-plus-circle-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Create A Bill</span>
+
+                                            <select class="form-control selectpicker bg-white me-3" title="Select County" data-live-search="true">
+                                                <option value="A">All Counties</option>
+                                                <option value="2">Mombasa</option>
+                                                <option value="2">Kwale</option>
+                                                <option value="2">Kilifi</option>
+                                                <option value="2">Tana River</option>
+                                                <option value="2">Lamu</option>
+                                                <option value="2">Taita–Taveta</option>
+                                                <option value="2">Garissa</option>
+                                                <option value="2">Wajir</option>
+                                                <option value="2">Nairobi</option>
+                                          </select>
+
+                                            <select class="form-control selectpicker bg-white me-3" title="Select Sub county" data-live-search="true">
+                                                <option value="2">Dagoretti</option>
+                                                <option value="2">Lang'ata</option>
+                                                <option value="2">Kibra</option>
+                                                <option value="2">Kasarani</option>
+                                                <option value="2">Westlands</option>
+                                                <option value="2">Embakasi</option>
+                                                <option value="2">Kamukunji</option>
+                                                <option value="2">Mathare</option>
+                                          </select>
+
+                                          <select class="form-control form-select selectpicker bg-white me-3" title="Select Ward" data-live-search="true">
+                                            <option value="A">All Wards</option>
+                                            <option value="2">Kitisuru</option>
+                                            <option value="2">Parklands/Highridge</option>
+                                            <option value="2">Karura</option>
+                                            <option value="2">Kangemi</option>
+                                            <option value="2">Mountain View</option>
+                                            <option value="2">Kawangware</option>
+                                            <option value="2">Gatina</option>
+                                            <option value="2">Kileleshwa</option>
+                                            <option value="2">Mutu-ini</option>
+                                            <option value="2">Ngando</option>
+
+                                         </select>
+
+                                         <select class="form-control form-select selectpicker bg-white me-3" title="Select Month" data-live-search="true">
+                                            <option value="A">January</option>
+                                            <option value="2">February</option>
+                                            <option value="2">March</option>
+                                            <option value="2">April</option>
+                                            <option value="2" selected>May</option>                                           
+
+                                         </select>
+                                        </div>
+                                        <div class="d-flex">
+                                            <a href="bill-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize d-non">
+                                                <i class="mdi mdi-refresh  font-size-16"></i> <span class="pl-1 d-md-inline">Reset Filters</span>
                                             </a>
                                         </div>
                                     </div>
@@ -419,25 +466,38 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th scope="col">#</th>
-                                                    <th scope="col">School</th>
-                                                    <th scope="col">Branches</th>
-                                                    <th scope="col">HQ Location</th>
-                                                    <th scope="col" class="text-right">Status</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Violation</th>
+                                                    <th scope="col">Driver</th>
+                                                    <th>Car</th>
+                                                    <th>Road/Street</th>
+                                                    <th>Recorded By</th>
+                                                    <th class="text-right">Amount</th>
+                                                    <th>Payment Status</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">1.</td>
-                                                    <td class="text-capitalize text-nowrap">The driving school</td>
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                   
-                                                    <td>
-                                                        Industrial Area Branch – Nairobi
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
                                                     </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
+                                                    <td>
+                                                        Mombasa Road
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
                                                    
-                                                    <td class="text-right">
-                                                        <span class="badge badge-soft-success text-uppercase">Active</span>
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
                                                     </td>
                                                     <td>
                                                         <div class="d-flex justify-content-end">
@@ -458,19 +518,29 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">2.</td>
-                                                    <td class="text-capitalize text-nowrap">The driving school</td>
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                   
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
+                                                    </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
                                                     <td>
-                                                        Industrial Area Branch – Nairobi
+                                                        Mombasa Road
                                                     </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
                                                    
-                                                    <td class="text-right">
-                                                        <span class="badge badge-soft-success text-uppercase">Active</span>
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
                                                     </td>
-                                                     <td>
+                                                    <td>
                                                         <div class="d-flex justify-content-end">
                                                             <a href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
                                                             <div class="dropdown d-none">
@@ -489,19 +559,29 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">3.</td>
-                                                    <td class="text-capitalize text-nowrap">The driving school</td>
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                   
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
+                                                    </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
                                                     <td>
-                                                        Industrial Area Branch – Nairobi
+                                                        Mombasa Road
                                                     </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
                                                    
-                                                    <td class="text-right">
-                                                        <span class="badge badge-soft-success text-uppercase">Active</span>
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
                                                     </td>
-                                                     <td>
+                                                    <td>
                                                         <div class="d-flex justify-content-end">
                                                             <a href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
                                                             <div class="dropdown d-none">
@@ -520,19 +600,29 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap">4.</td>
-                                                    <td class="text-capitalize text-nowrap">The driving school</td>
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                   
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
+                                                    </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
                                                     <td>
-                                                        Industrial Area Branch – Nairobi
+                                                        Mombasa Road
                                                     </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
                                                    
-                                                    <td class="text-right">
-                                                        <span class="badge badge-soft-success text-uppercase">Active</span>
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
                                                     </td>
-                                                     <td>
+                                                    <td>
                                                         <div class="d-flex justify-content-end">
                                                             <a href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
                                                             <div class="dropdown d-none">
@@ -551,22 +641,107 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">5.</td>
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
+                                                    </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
+                                                    <td>
+                                                        Mombasa Road
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
+                                                   
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">6.</td>
+                                                    <td class="text-capitalize text-nowrap">10 May 2023</td>
+                                                    <td>Driving on or through a pedestrian walkway.</td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="#">Alex Wanjala</a></p>
+                                                        <small>DL-123453455</small>
+                                                    </td>
+                                                    <td class="text-uppercase">KDD 345T</td>
+                                                    <td>
+                                                        Mombasa Road
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0"><a href="#">Kennedy Ken</a></p>
+                                                        <small>AD-1234554</small>
+                                                    </td>
+                                                    <td class="text-right">KES 4,300</td>
+                                                   
+                                                    <td class="">
+                                                        <span class="badge badge-soft-success text-uppercase">PAID</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">View Details</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                               
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th colspan="2">
-                                                        23 Schools
+                                                    <th colspan="3">
+                                                        23 Violations
                                                     </th>
                                                     <td class="text-nowrap " colspan="">
-                                                       4 
+                                                       4 Drivers
                                                     </td>
-                                                    <td class="text-right" colspan="2">
-                                                        <span class="badge badge-soft-danger text-uppercase">inactive</span> 56
-                                                        <span class="badge badge-soft-success text-uppercase">Active</span>456
+                                                    <td colspan="2">5 Cars</td>
+                                                    <td>5 Agents</td>
+                                                    <th class="text-right">KES 45,900</th>
+                                                    <td class="" colspan="2">
+                                                        <span class="badge badge-soft-danger text-uppercase">Unpaid</span> 56
+                                                        <span class="badge badge-soft-success text-uppercase ml-2">Paid</span>456
 
                                                     </td>
-                                                    <td></td>
+                                                   
                                                 </tr>
 
                                             </tfoot>
