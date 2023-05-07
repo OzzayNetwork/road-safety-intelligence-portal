@@ -53,8 +53,12 @@ Highcharts.chart('annual-sales', {
     plotOptions: {
         column: {
             pointPadding: 0.2,
-            borderWidth: 0
-        }
+            borderWidth: 0,
+            
+        },
+
+        
+        
     },
     series: [{
         name: 'Revenue',
@@ -75,6 +79,11 @@ Highcharts.chart('annual-sales', {
             27, 11, 16],
         tooltip: {
             valueSuffix: ''
-        }
+        },
+        shadow: {
+            color: 'black', offsetX: 0, offsetY: 5, opacity: 0.2, width: 5
+        },
+        lineWidth: 2,
+        
     }]
 });
